@@ -35,14 +35,7 @@ class SplashScreen extends StatelessWidget {
             return Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                OverflowBox(
-                  maxWidth: double.infinity,
-                  child: Image(
-                    image: logo,
-                    width: width,
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
+                Image(image: logo, width: width, fit: BoxFit.fitWidth),
                 SizedBox(height: 24),
                 ProgressBar(progress: p),
               ],
