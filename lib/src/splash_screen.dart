@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:elegant_progress_bar/elegant_progress_bar.dart';
 
 class SplashScreen extends StatelessWidget {
-  final String logo;
+  final ImageProvider logo;
   final double width;
   final Stream<double> progressStream;
   final VoidCallback? onComplete;
@@ -37,8 +37,8 @@ class SplashScreen extends StatelessWidget {
               children: [
                 OverflowBox(
                   maxWidth: double.infinity,
-                  child: Image.asset(
-                    logo,
+                  child: Image(
+                    image: logo,
                     width: width,
                     fit: BoxFit.fitWidth,
                   ),
