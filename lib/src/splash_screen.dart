@@ -25,7 +25,11 @@ class SplashScreen extends StatelessWidget {
           initialData: 0,
           builder: (context, snapshot) {
             final p = (snapshot.data ?? 0).clamp(0.0, 1.0);
-            if (p >= 1.0) onComplete?.call();
+            if (p >= 1.0) {
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                onComplete?.call();
+              });
+            }
             return Column(
               mainAxisSize: MainAxisSize.min,
               children: [

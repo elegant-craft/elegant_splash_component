@@ -1,6 +1,6 @@
 name: elegant_splash_component
 description: "A customizable splash screen with logo and progress bar."
-version: 1.0.0
+version: 1.0.1
 publish_to: none
 homepage: https://github.com/elegant-craft/elegant_splash_component
 license: MIT
