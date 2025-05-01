@@ -33,12 +33,17 @@ class SplashScreen extends StatelessWidget {
               });
             }
             return Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset(
-                'assets/logo.png',
-                  width: width,
-                  fit: BoxFit.fitWidth,
+                OverflowBox(
+                  maxWidth: double.infinity,
+                  child: Image.asset(
+                    'assets/logo.png',
+                    width: width,
+                    fit: BoxFit.contain,
+                  ),
                 ),
+                SizedBox(height: 24),
                 ProgressBar(progress: p),
               ],
             );
