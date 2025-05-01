@@ -3,6 +3,7 @@ import 'package:elegant_progress_bar/elegant_progress_bar.dart';
 
 class SplashScreen extends StatelessWidget {
   final ImageProvider logo;
+  final double width;
   final Stream<double> progressStream;
   final VoidCallback? onComplete;
   final Color backgroundColor;
@@ -10,6 +11,7 @@ class SplashScreen extends StatelessWidget {
   const SplashScreen({
     Key? key,
     required this.logo,
+    required this.width,
     required this.progressStream,
     this.onComplete,
     this.backgroundColor = Colors.white,
@@ -33,7 +35,7 @@ class SplashScreen extends StatelessWidget {
             return Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image(image: logo, width: 120),
+                Image(image: logo, width: width),
                 SizedBox(height: 24),
                 ProgressBar(progress: p),
               ],
