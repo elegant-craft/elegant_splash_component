@@ -1,7 +1,8 @@
 name: elegant_splash_component
 description: "A customizable splash screen with logo and progress bar."
 version: 1.0.0
-homepage: 
+publish_to: none
+homepage: https://github.com/elegant-craft/elegant_splash_component
 license: MIT
 environment:
   sdk: ^3.7.2
@@ -10,6 +11,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  elegant_progress_bar:
+    git:
+      url: https://github.com/elegant-craft/elegant_progress_bar
+      ref: main
 
 dev_dependencies:
   flutter_test:
