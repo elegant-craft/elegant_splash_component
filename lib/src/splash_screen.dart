@@ -37,10 +37,10 @@ class SplashScreen extends StatelessWidget {
               children: [
                 OverflowBox(
                   maxWidth: double.infinity,
-                  child: Image.asset(
-                    'assets/logo.png',
+                  child: Image(
+                    image: logo,
                     width: width,
-                    fit: BoxFit.contain,
+                    fit: BoxFit.fitWidth,
                   ),
                 ),
                 SizedBox(height: 24),
