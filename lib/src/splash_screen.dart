@@ -33,14 +33,12 @@ class SplashScreen extends StatelessWidget {
               });
             }
             return Column(
-              mainAxisSize: MainAxisSize.min,
               children: [
                 Image.asset(
                 'assets/logo.png',
                   width: width,
                   fit: BoxFit.fitWidth,
                 ),
-                SizedBox(height: 24),
                 ProgressBar(progress: p),
               ],
             );
